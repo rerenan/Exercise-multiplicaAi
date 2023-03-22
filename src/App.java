@@ -6,15 +6,16 @@ public class App {
         Scanner scannerObjSize = new Scanner(System.in);
 
         System.out.println("Tabela de multiplicação de qual número?");
-        String number = scannerObjNum.nextLine();
+        int number = scannerObjNum.nextInt();
 
         System.out.println("Qual o tamanho da tabela?");
-        String size = scannerObjSize.nextLine();
+        int size = scannerObjSize.nextInt();
 
         System.out.println("\n" + "Tabela de multiplicação de " + number + "\n");
-        for (int i = 0; i <= Integer.parseInt(size); i++) {
 
-            int result = i * Integer.parseInt(number);
+        for (int i = 0; i <= size; i++) {
+
+            int result = i * number;
             System.out.println(number + " x " + i + " = " + result);
         }
     }
